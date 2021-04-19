@@ -1,0 +1,2 @@
+# flutter_getx_project_template
+基于GetX的Flutter项目模板
