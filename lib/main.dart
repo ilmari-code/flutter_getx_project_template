@@ -3,14 +3,11 @@
  * @Autor: ilmari
  * @Date: 2021-04-19 16:10:54
  * @LastEditors: ilmari
- * @LastEditTime: 2021-04-25 10:23:58
+ * @LastEditTime: 2021-04-26 11:20:48
  */
 import 'package:flutter/material.dart';
 import 'package:flutter_getx_project_template/app/lang/translation_service.dart';
-import 'package:flutter_getx_project_template/app/shared/logger/logger_utils.dart';
-
 import 'package:get/get.dart';
-
 import 'app/routes/app_pages.dart';
 
 void main() {
@@ -28,7 +25,7 @@ class MyApp extends StatelessWidget {
       enableLog: true,
       initialRoute: AppPages.INITIAL,
       getPages: AppPages.routes,
-      logWriterCallback: Logger.write,
+      // logWriterCallback: Logger.write,
       locale: TranslationService.locale,
       fallbackLocale: TranslationService.fallbackLocale,
       translations: TranslationService(),

@@ -22,6 +22,18 @@ environment:
 
 dependencies:
   get: 4.1.4
+  #  dio 网络框架 https://pub.flutter-io.cn/packages/dio
+  dio: ^4.0.0
+  # logging 打印log的工具类
+  logging: ^1.0.1
+  #  flutter常用工具库 https://pub.dev/packages/flustars
+  flustars: ^2.0.1
+  # package_info app版本信息工具类 https://pub.dev/packages/package_info
+  package_info: ^2.0.0
+  #https://pub.dev/packages/oktoast
+  oktoast: ^3.0.0
+  # MMKV 一个更高效存储简单数据的库 https://pub.dev/packages/flummkv
+  # flummkv: ^1.0.27
   flutter:
     sdk: flutter
 
