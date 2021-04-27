@@ -3,12 +3,12 @@
  * @Autor: ilmari
  * @Date: 2021-04-19 16:10:54
  * @LastEditors: ilmari
- * @LastEditTime: 2021-04-26 11:20:48
+ * @LastEditTime: 2021-04-27 15:35:52
  */
 import 'package:flutter/material.dart';
 import 'package:flutter_getx_project_template/app/lang/translation_service.dart';
+import 'package:flutter_getx_project_template/app/routes/app_routes.dart';
 import 'package:get/get.dart';
-import 'app/routes/app_pages.dart';
 
 void main() {
   runApp(
@@ -23,8 +23,9 @@ class MyApp extends StatelessWidget {
       title: "Application",
       debugShowCheckedModeBanner: false,
       enableLog: true,
-      initialRoute: AppPages.INITIAL,
-      getPages: AppPages.routes,
+      initialRoute: AppRoutes.main,
+      getPages: AppRoutes.allPages,
+      unknownRoute: AppRoutes.getNotFoundPage(),
       // logWriterCallback: Logger.write,
       locale: TranslationService.locale,
       fallbackLocale: TranslationService.fallbackLocale,

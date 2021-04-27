@@ -4,7 +4,7 @@ import 'package:get/get.dart';
 
 import '../controllers/mine_controller.dart';
 
-class MineView extends GetView<MineController> {
+class MinePage extends GetView<MineController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

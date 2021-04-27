@@ -1,10 +1,17 @@
+/*
+ * @Description: 
+ * @Autor: ilmari
+ * @Date: 2021-04-20 09:21:53
+ * @LastEditors: ilmari
+ * @LastEditTime: 2021-04-27 15:40:50
+ */
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
 
 import '../controllers/features_controller.dart';
 
-class FeaturesView extends GetView<FeaturesController> {
+class FeaturesPage extends GetView<FeaturesController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

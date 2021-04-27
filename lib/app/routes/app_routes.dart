@@ -1,14 +1,37 @@
-part of 'app_pages.dart';
-// DO NOT EDIT. This is code generated via package:get_cli/get_cli.dart
+/*
+ * @Description: 
+ * @Autor: ilmari
+ * @Date: 2021-04-19 16:10:54
+ * @LastEditors: ilmari
+ * @LastEditTime: 2021-04-27 15:40:13
+ */
+import 'package:flutter_getx_project_template/app/modules/index/bindings/index_binding.dart';
+import 'package:flutter_getx_project_template/app/modules/index/views/index_page.dart';
+import 'package:flutter_getx_project_template/app/routes/404.dart';
+import 'package:flutter_getx_project_template/app/routes/feature_routes.dart';
+import 'package:flutter_getx_project_template/app/routes/home_route.dart';
+import 'package:flutter_getx_project_template/app/routes/mine_route.dart';
+import 'package:get/get.dart';
 
-abstract class Routes {
-  static const HOME = _Paths.HOME;
-  static const MINE = _Paths.MINE;
-  static const FEATURES = _Paths.FEATURES;
-}
+class AppRoutes {
+  ///主页面
+  static final String main = "/main";
 
-abstract class _Paths {
-  static const HOME = '/home';
-  static const MINE = '/mine';
-  static const FEATURES = '/features';
+  ///全局webview
+  static final String webView = "/webView";
+
+  ///发大查看图片page
+  static final String photoViewPage = "/photoViewPage";
+
+  static final List<GetPage> allPages = []
+    ..add(
+      GetPage(name: main, page: () => IndexPage(), binding: IndexBinding()),
+    )
+    ..addAll(HomeRoute.pages)
+    ..addAll(FeaturesRoute.pages)
+    ..addAll(MineRoute.pages);
+
+  static GetPage getNotFoundPage() {
+    return GetPage(name: '/notfound', page: () => NotFoundPage());
+  }
 }

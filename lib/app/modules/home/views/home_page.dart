@@ -6,13 +6,13 @@
  * @LastEditTime: 2021-04-25 10:59:36
  */
 import 'package:flutter/material.dart';
-import 'package:flutter_getx_project_template/app/modules/mine/views/mine_view.dart';
+import 'package:flutter_getx_project_template/app/modules/mine/views/mine_page.dart';
 
 import 'package:get/get.dart';
 
 import '../controllers/home_controller.dart';
 
-class HomeView extends GetView<HomeController> {
+class HomePage extends GetView<HomeController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -22,7 +22,7 @@ class HomeView extends GetView<HomeController> {
       ),
       body: Center(
         child: GestureDetector(
-          onTap: () => Get.to(MineView()),
+          onTap: () => Get.to(MinePage()),
           child: Text(
             'HomeView is working123',
             style: TextStyle(fontSize: 20),
