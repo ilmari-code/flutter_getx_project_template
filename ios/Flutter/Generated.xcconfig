@@ -1,0 +1,13 @@
+// This is a generated file; do not edit or check into version control.
+FLUTTER_ROOT=/Applications/flutter
+FLUTTER_APPLICATION_PATH=/Users/zangyingzhen/Documents/other/flutter_getx_project_template
+FLUTTER_TARGET=/Users/zangyingzhen/Documents/other/flutter_getx_project_template/lib/main.dart
+FLUTTER_BUILD_DIR=build
+SYMROOT=${SOURCE_ROOT}/../build/ios
+FLUTTER_BUILD_NAME=1.0.0
+FLUTTER_BUILD_NUMBER=1
+DART_DEFINES=flutter.inspector.structuredErrors%3Dtrue
+DART_OBFUSCATION=false
+TRACK_WIDGET_CREATION=true
+TREE_SHAKE_ICONS=false
+PACKAGE_CONFIG=/Users/zangyingzhen/Documents/other/flutter_getx_project_template/.dart_tool/package_config.json
