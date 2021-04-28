@@ -3,7 +3,7 @@
  * @Autor: ilmari
  * @Date: 2021-04-27 14:58:51
  * @LastEditors: ilmari
- * @LastEditTime: 2021-04-27 15:38:41
+ * @LastEditTime: 2021-04-27 15:59:49
  */
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
@@ -41,6 +41,13 @@ class IndexController extends GetxController {
         icon: Icon(Icons.home),
         activeIcon: Icon(
           Icons.home,
+          color: ResourceColors.color_08B16B,
+        )),
+    BottomNavigationBarItem(
+        label: '功能',
+        icon: Icon(Icons.featured_video),
+        activeIcon: Icon(
+          Icons.featured_video,
           color: ResourceColors.color_08B16B,
         )),
     BottomNavigationBarItem(

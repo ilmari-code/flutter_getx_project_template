@@ -1,6 +1,0 @@
-framework module flummkv {
-  umbrella header "flummkv-umbrella.h"
-
-  export *
-  module * { export * }
-}

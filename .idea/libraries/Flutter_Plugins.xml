@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="Flutter Plugins" type="FlutterPluginsLibraryType">
+    <CLASSES>
+      <root url="file:///Applications/flutter/.pub-cache/hosted/pub.flutter-io.cn/shared_preferences_linux-2.0.0" />
+      <root url="file:///Applications/flutter/.pub-cache/hosted/pub.flutter-io.cn/path_provider_windows-2.0.1" />
+      <root url="file:///Applications/flutter/.pub-cache/hosted/pub.flutter-io.cn/shared_preferences-2.0.5" />
+      <root url="file:///Applications/flutter/.pub-cache/hosted/pub.flutter-io.cn/shared_preferences_web-2.0.0" />
+      <root url="file:///Applications/flutter/.pub-cache/hosted/pub.flutter-io.cn/path_provider_linux-2.0.0" />
+      <root url="file:///Applications/flutter/.pub-cache/hosted/pub.flutter-io.cn/package_info-2.0.0" />
+      <root url="file:///Applications/flutter/.pub-cache/hosted/pub.flutter-io.cn/path_provider-2.0.1" />
+      <root url="file:///Applications/flutter/.pub-cache/hosted/pub.flutter-io.cn/shared_preferences_windows-2.0.0" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

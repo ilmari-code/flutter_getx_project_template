@@ -29,7 +29,7 @@ class IndexPage extends GetView<IndexController> {
               child: Obx(() => BottomNavigationBar(
                     backgroundColor: Colors.white,
                     items: controller.items,
-                    type: BottomNavigationBarType.fixed,
+                    type: BottomNavigationBarType.shifting,
                     currentIndex: _tabIndex.value,
                     elevation: 0,
                     iconSize: Dimens.size24,
