@@ -9,11 +9,7 @@ import 'package:flutter_getx_project_template/app/utils/log/log.dart';
 import 'package:get/get.dart';
 
 class HomeController extends GetxController with StateMixin {
-  //TODO: Implement HomeController
-
   final count = 0.obs;
-
-  HomeController() {}
 
   @override
   void onInit() {
