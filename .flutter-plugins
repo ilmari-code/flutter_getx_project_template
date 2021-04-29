@@ -9,3 +9,4 @@ shared_preferences_linux=/Applications/flutter/.pub-cache/hosted/pub.flutter-io.
 shared_preferences_macos=/Applications/flutter/.pub-cache/hosted/pub.flutter-io.cn/shared_preferences_macos-2.0.0/
 shared_preferences_web=/Applications/flutter/.pub-cache/hosted/pub.flutter-io.cn/shared_preferences_web-2.0.0/
 shared_preferences_windows=/Applications/flutter/.pub-cache/hosted/pub.flutter-io.cn/shared_preferences_windows-2.0.0/
+sqflite=/Applications/flutter/.pub-cache/hosted/pub.flutter-io.cn/sqflite-2.0.0+3/
