@@ -22,8 +22,12 @@ environment:
 
 dependencies:
   get: 4.1.4
+  #https://pub.dev/packages/get_storage/install 存储
+  get_storage: ^2.0.2
   #  dio 网络框架 https://pub.flutter-io.cn/packages/dio
   dio: ^4.0.0
+  # 格式化String https://github.com/Naddiseo/dart-sprintf
+  sprintf: ^6.0.0
   # logging 打印log的工具类
   logging: ^1.0.1
   #  flutter常用工具库 https://pub.dev/packages/flustars

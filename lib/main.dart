@@ -3,8 +3,9 @@
  * @Autor: ilmari
  * @Date: 2021-04-19 16:10:54
  * @LastEditors: ilmari
- * @LastEditTime: 2021-04-29 10:41:02
+ * @LastEditTime: 2021-04-30 08:55:48
  */
+import 'package:dio/dio.dart';
 import 'package:flustars/flustars.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_getx_project_template/app/config/application.dart';
@@ -19,6 +20,8 @@ import 'package:flutter_getx_project_template/app/routes/app_routes.dart';
 import 'package:flutter_getx_project_template/app/utils/log/log.dart';
 import 'package:flutter_getx_project_template/app/utils/logger/logger_utils.dart';
 import 'package:get/get.dart';
+
+import 'app/utils/network/http_utils.dart';
 
 void main() {
   runApp(
@@ -43,7 +46,7 @@ class MyApp extends StatelessWidget {
       initialRoute: AppRoutes.main,
       getPages: AppRoutes.allPages,
       unknownRoute: AppRoutes.getNotFoundPage(),
-      logWriterCallback: LoggerConfig.write,
+      // logWriterCallback: LoggerConfig.write,
       locale: TranslationService.locale,
       fallbackLocale: TranslationService.fallbackLocale,
       translations: TranslationService(),
@@ -59,7 +62,7 @@ class MyApp extends StatelessWidget {
   void _init(BuildContext context) {
     Application.context = context;
     Application.initPackageInfo();
-    //TODO:添加网络初始化
+    _initDio();
     _initTheme();
     this.options = AppOptions(
         theme: lightTheme,
@@ -70,6 +73,12 @@ class MyApp extends StatelessWidget {
         proxy: 'DIRECT');
     //设置设计稿的宽高
     setDesignWHD(375, 812);
+  }
+
+  void _initDio() {
+    HttpUtils().initNetWork();
+    //开启log
+    Log.configuration(loggerLevel);
   }
 
   void _initTheme() {

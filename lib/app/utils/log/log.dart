@@ -1,5 +1,6 @@
 import 'dart:async';
 import 'dart:developer' as developer;
+import 'dart:convert' as convert;
 
 import 'package:logging/logging.dart';
 import 'package:stack_trace/stack_trace.dart';
@@ -136,4 +137,79 @@ class Log {
       return '($location) $message';
     }
   }
+
+  static void json(String msg) {
+    try {
+      final dynamic data = convert.json.decode(msg);
+      if (data is Map) {
+        _printMap(data);
+      } else if (data is List) {
+        _printList(data);
+      } else
+        log(Level.INFO, msg);
+    } catch (e) {
+      log(Level.WARNING, msg);
+    }
+  }
+
+  // https://github.com/Milad-Akarie/pretty_dio_logger
+  static void _printMap(Map data,
+      {int tabs = 1, bool isListItem = false, bool isLast = false}) {
+    final bool isRoot = tabs == 1;
+    final String initialIndent = _indent(tabs);
+    tabs++;
+
+    if (isRoot || isListItem) {
+      log(Level.INFO, '$initialIndent');
+    }
+
+    data.keys.toList().asMap().forEach((index, dynamic key) {
+      final bool isLast = index == data.length - 1;
+      dynamic value = data[key];
+      if (value is String) {
+        value = '"$value"';
+      }
+      if (value is Map) {
+        if (value.isEmpty)
+          log(
+            Level.INFO,
+            '${_indent(tabs)} $key: $value${!isLast ? ',' : ''}',
+          );
+        else {
+          log(Level.INFO, '${_indent(tabs)} $key: {');
+          _printMap(value, tabs: tabs);
+        }
+      } else if (value is List) {
+        if (value.isEmpty) {
+          log(Level.INFO, '${_indent(tabs)} $key: ${value.toString()}');
+        } else {
+          log(Level.INFO, '${_indent(tabs)} $key: [');
+          _printList(value, tabs: tabs);
+          log(Level.INFO, '${_indent(tabs)} ]${isLast ? '' : ','}');
+        }
+      } else {
+        final msg = value.toString().replaceAll('\n', '');
+        log(Level.INFO, '${_indent(tabs)} $key: $msg${!isLast ? ',' : ''}');
+      }
+    });
+
+    log(Level.INFO, '$initialIndent}${isListItem && !isLast ? ',' : ''}');
+  }
+
+  static void _printList(List list, {int tabs = 1}) {
+    list.asMap().forEach((i, dynamic e) {
+      final bool isLast = i == list.length - 1;
+      if (e is Map) {
+        if (e.isEmpty) {
+          log(Level.INFO, '${_indent(tabs)}  $e${!isLast ? ',' : ''}');
+        } else {
+          _printMap(e, tabs: tabs + 1, isListItem: true, isLast: isLast);
+        }
+      } else {
+        log(Level.INFO, '${_indent(tabs + 2)} $e${isLast ? '' : ','}');
+      }
+    });
+  }
+
+  static String _indent([int tabCount = 1]) => '  ' * tabCount;
 }

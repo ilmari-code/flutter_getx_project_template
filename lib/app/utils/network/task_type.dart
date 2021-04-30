@@ -1,3 +1,10 @@
+/*
+ * @Description: 
+ * @Autor: ilmari
+ * @Date: 2021-04-26 10:21:37
+ * @LastEditors: ilmari
+ * @LastEditTime: 2021-04-29 16:02:25
+ */
 typedef AsyncParamTask = Future<TaskResult> Function(String param);
 typedef AsyncTask = Future<TaskResult> Function();
 
