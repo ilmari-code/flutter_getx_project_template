@@ -42,6 +42,8 @@ dependencies:
   octo_image: ^1.0.0+1
   #https://pub.dev/packages/cached_network_image/install
   cached_network_image: ^3.0.0
+  #https://pub.flutter-io.cn/packages/flutter_easyrefresh/install
+  flutter_easyrefresh: ^2.2.1
   flutter:
     sdk: flutter
 

@@ -3,9 +3,8 @@
  * @Autor: ilmari
  * @Date: 2021-04-19 16:10:54
  * @LastEditors: ilmari
- * @LastEditTime: 2021-04-30 08:55:48
+ * @LastEditTime: 2021-05-05 09:27:47
  */
-import 'package:dio/dio.dart';
 import 'package:flustars/flustars.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_getx_project_template/app/config/application.dart';
@@ -18,7 +17,6 @@ import 'package:flutter_getx_project_template/app/resource/dimens.dart';
 import 'package:flutter_getx_project_template/app/resource/resource_colors.dart';
 import 'package:flutter_getx_project_template/app/routes/app_routes.dart';
 import 'package:flutter_getx_project_template/app/utils/log/log.dart';
-import 'package:flutter_getx_project_template/app/utils/logger/logger_utils.dart';
 import 'package:get/get.dart';
 
 import 'app/utils/network/http_utils.dart';
