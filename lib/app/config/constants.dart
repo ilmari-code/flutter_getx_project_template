@@ -3,7 +3,7 @@
  * @Autor: ilmari
  * @Date: 2021-04-27 16:34:54
  * @LastEditors: ilmari
- * @LastEditTime: 2021-04-27 16:37:29
+ * @LastEditTime: 2021-05-05 14:15:29
  */
 import 'package:flustars/flustars.dart';
 import 'package:flutter_getx_project_template/app/plugins/options/options.dart';
