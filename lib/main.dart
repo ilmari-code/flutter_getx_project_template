@@ -3,7 +3,7 @@
  * @Autor: ilmari
  * @Date: 2021-04-19 16:10:54
  * @LastEditors: ilmari
- * @LastEditTime: 2021-05-08 13:44:04
+ * @LastEditTime: 2021-05-08 14:09:25
  */
 import 'package:flustars/flustars.dart';
 import 'package:flutter/material.dart';
@@ -15,13 +15,14 @@ import 'package:flutter_getx_project_template/app/plugins/options/scales.dart';
 import 'package:flutter_getx_project_template/app/plugins/options/themes.dart';
 import 'package:flutter_getx_project_template/app/routes/app_routes.dart';
 import 'package:flutter_getx_project_template/app/utils/log/log.dart';
+import 'package:flutter_getx_project_template/app/utils/sp_utils/sp_utils.dart';
 import 'package:get/get.dart';
-import 'package:get_storage/get_storage.dart';
 
 import 'app/utils/network/http_utils.dart';
 
 void main() async {
-  await GetStorage.init();
+  //sp init
+  await SpUtils.init();
   runApp(
     MyApp(),
   );
@@ -58,8 +59,7 @@ class MyApp extends StatelessWidget {
   }
 
   void _init(BuildContext context) {
-    final box = GetStorage();
-    String themeName = box.read('theme').toString();
+    String themeName = SpUtils.get<String>('theme');
     Application.context = context;
     Application.initPackageInfo();
     _initDio();

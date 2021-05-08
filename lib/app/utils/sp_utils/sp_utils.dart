@@ -8,7 +8,7 @@
 import 'package:get_storage/get_storage.dart';
 
 class SpUtils {
-  static const String spStorageKey = 'jxy_farmer';
+  static const String spStorageKey = 'getx_project_template';
   static GetStorage? box;
 
   static String nowStorage = spStorageKey;
