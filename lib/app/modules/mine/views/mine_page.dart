@@ -3,7 +3,7 @@
  * @Autor: ilmari
  * @Date: 2021-04-27 15:55:46
  * @LastEditors: ilmari
- * @LastEditTime: 2021-05-08 10:29:40
+ * @LastEditTime: 2021-05-08 11:19:58
  */
 import 'package:flutter/material.dart';
 import 'package:flutter_getx_project_template/app/resource/dimens.dart';
@@ -47,7 +47,12 @@ class MinePage extends GetView<MineController> {
             case 0:
               NavigatorUtils.push(MineRoute.ChangeThemeRoute);
               break;
+            case 1:
+              NavigatorUtils.push(MineRoute.ChangeLanguageRoute);
+              break;
             default:
+              NavigatorUtils.push(MineRoute.ChangeLanguageRoute);
+              break;
           }
         },
       ),

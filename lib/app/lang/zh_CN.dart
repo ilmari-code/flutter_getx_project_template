@@ -7,4 +7,5 @@
  */
 const Map<String, String> zh_CN = {
   'hello': '你好 世界',
+  'changeLanguagePage': '修改语言',
 };
