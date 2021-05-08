@@ -3,7 +3,7 @@
  * @Autor: ilmari
  * @Date: 2021-04-19 16:10:54
  * @LastEditors: ilmari
- * @LastEditTime: 2021-05-05 11:22:36
+ * @LastEditTime: 2021-05-05 15:02:30
  */
 import 'package:flutter/material.dart';
 import 'package:flutter_easyrefresh/easy_refresh.dart';
@@ -11,6 +11,7 @@ import 'package:flutter_getx_project_template/app/modules/mine/views/mine_page.d
 import 'package:flutter_getx_project_template/app/widget/state/empty_widget.dart';
 import 'package:get/get.dart';
 import '../controllers/home_controller.dart';
+import '../../../utils/extensions/extension_text.dart';
 
 class HomePage extends GetView<HomeController> {
   @override
@@ -50,6 +51,17 @@ class HomePage extends GetView<HomeController> {
           ),
         ),
       ),
+    );
+  }
+}
+
+class HStateWidget extends StatelessWidget {
+  HStateWidget({Key? key}) : super(key: key);
+  final text = Text("data").bold();
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      child: Text("data"),
     );
   }
 }

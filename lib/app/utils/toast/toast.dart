@@ -11,3 +11,5 @@ class Toast {
     dismissAllToast();
   }
 }
+
+class GetToast {}
