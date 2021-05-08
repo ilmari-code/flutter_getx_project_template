@@ -3,7 +3,7 @@
  * @Autor: ilmari
  * @Date: 2021-05-08 09:25:21
  * @LastEditors: ilmari
- * @LastEditTime: 2021-05-08 10:59:55
+ * @LastEditTime: 2021-05-08 13:20:53
  */
 import 'package:flutter/material.dart';
 import 'package:flutter_getx_project_template/app/modules/mine/controllers/change_theme_controller.dart';
@@ -50,8 +50,7 @@ class ChangeThemePage extends GetView<ChangeThemeController> {
                         ),
                       ),
                       onTap: () {
-                        controller.selectedIndex = index;
-                        Get.changeTheme(controller.themeList[index].data);
+                        controller.changeTheme(index, '');
                       });
                 })));
   }

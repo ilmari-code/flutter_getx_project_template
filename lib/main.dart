@@ -3,7 +3,7 @@
  * @Autor: ilmari
  * @Date: 2021-04-19 16:10:54
  * @LastEditors: ilmari
- * @LastEditTime: 2021-05-08 11:10:14
+ * @LastEditTime: 2021-05-08 13:44:04
  */
 import 'package:flustars/flustars.dart';
 import 'package:flutter/material.dart';
@@ -16,10 +16,12 @@ import 'package:flutter_getx_project_template/app/plugins/options/themes.dart';
 import 'package:flutter_getx_project_template/app/routes/app_routes.dart';
 import 'package:flutter_getx_project_template/app/utils/log/log.dart';
 import 'package:get/get.dart';
+import 'package:get_storage/get_storage.dart';
 
 import 'app/utils/network/http_utils.dart';
 
-void main() {
+void main() async {
+  await GetStorage.init();
   runApp(
     MyApp(),
   );
@@ -56,12 +58,17 @@ class MyApp extends StatelessWidget {
   }
 
   void _init(BuildContext context) {
+    final box = GetStorage();
+    String themeName = box.read('theme').toString();
     Application.context = context;
     Application.initPackageInfo();
     _initDio();
+    var currentTheme = appThemes.firstWhere(
+        (element) => (element.name == themeName),
+        orElse: () => lightTheme);
+    Get.changeTheme(currentTheme.data);
     // _initTheme();
     this.options = AppOptions(
-        theme: lightTheme,
         textScaleFactor: AppTextScaleValue(null, 'System Default'),
         timeDilation: 1.0,
         platform: TargetPlatform.iOS,

@@ -35,7 +35,7 @@ class ChangeLanguagePage extends GetView<ChangeLanguageController> {
                     locale = Locale('en', 'US');
                     break;
                 }
-                Get.updateLocale(locale);
+                controller.changeLanauage(locale);
               },
               child: Container(
                 margin: EdgeInsets.fromLTRB(
