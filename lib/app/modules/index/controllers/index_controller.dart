@@ -3,7 +3,7 @@
  * @Autor: ilmari
  * @Date: 2021-04-27 14:58:51
  * @LastEditors: ilmari
- * @LastEditTime: 2021-04-27 15:59:49
+ * @LastEditTime: 2021-05-08 11:05:34
  */
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
@@ -18,6 +18,9 @@ import 'package:flutter_getx_project_template/app/utils/keep_alive_page.dart';
 import 'package:get/get.dart';
 
 class IndexController extends GetxController {
+  DateTime? lastTime;
+  RxInt tabIndex = 0.obs;
+  PageController? pageController;
   final List<Widget> pages = [
     keepAliveWrapper(GetBuilder<HomeController>(
         init: HomeController(),
@@ -58,4 +61,9 @@ class IndexController extends GetxController {
           color: ResourceColors.color_08B16B,
         )),
   ];
+  @override
+  void onInit() {
+    pageController = PageController(initialPage: tabIndex.value);
+    super.onInit();
+  }
 }

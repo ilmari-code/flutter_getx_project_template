@@ -3,7 +3,7 @@
  * @Autor: ilmari
  * @Date: 2021-05-08 09:25:21
  * @LastEditors: ilmari
- * @LastEditTime: 2021-05-08 10:11:47
+ * @LastEditTime: 2021-05-08 10:59:55
  */
 import 'package:flutter/material.dart';
 import 'package:flutter_getx_project_template/app/modules/mine/controllers/change_theme_controller.dart';
@@ -19,51 +19,39 @@ class ChangeThemePage extends GetView<ChangeThemeController> {
         body: SafeArea(
             child: GridView.builder(
                 gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                    crossAxisCount: 2,
-                    childAspectRatio: 1,
-                    mainAxisSpacing: Dimens.size10,
-                    crossAxisSpacing: Dimens.size10),
+                  crossAxisCount: 2,
+                  childAspectRatio: 1,
+                ),
                 itemCount: 3,
                 itemBuilder: (BuildContext context, int index) {
-                  var title = "light";
-                  switch (index) {
-                    case 0:
-                      title = "light";
-                      break;
-                    case 1:
-                      title = "dark";
-                      break;
-                    case 2:
-                      title = "custom";
-                      break;
-                    default:
-                      title = "light";
-                  }
+                  var title = controller.themeList[index].name;
                   return GestureDetector(
                       child: Container(
-                        width: Dimens.size100,
-                        height: Dimens.size100,
+                        padding: EdgeInsets.all(Dimens.size15),
                         child: Container(
-                          color: Get.theme.accentColor,
-                          child: Center(
-                            child: Text("$title"),
+                          decoration: BoxDecoration(
+                              color: Get.theme.accentColor,
+                              borderRadius:
+                                  BorderRadius.circular(Dimens.size10)),
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Text(
+                                "$title",
+                                style: TextStyle(
+                                    fontSize: DimenFont.large,
+                                    fontWeight: FontWeight.bold),
+                              ),
+                              index == controller.selectedIndex
+                                  ? Text("currentTheme")
+                                  : Text("")
+                            ],
                           ),
                         ),
                       ),
                       onTap: () {
-                        switch (index) {
-                          case 0:
-                            Get.changeTheme(ThemeData.light());
-                            break;
-                          case 1:
-                            Get.changeTheme(ThemeData.dark());
-                            break;
-                          case 2:
-                            Get.changeTheme(customTheme.data);
-                            break;
-                          default:
-                            Get.changeTheme(ThemeData.light());
-                        }
+                        controller.selectedIndex = index;
+                        Get.changeTheme(controller.themeList[index].data);
                       });
                 })));
   }

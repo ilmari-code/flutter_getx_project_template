@@ -3,7 +3,7 @@
  * @Autor: ilmari
  * @Date: 2021-04-29 10:18:26
  * @LastEditors: ilmari
- * @LastEditTime: 2021-05-08 10:17:42
+ * @LastEditTime: 2021-05-08 10:41:57
  */
 import 'package:flutter/material.dart';
 import 'package:flutter_getx_project_template/app/resource/dimens.dart';
@@ -16,8 +16,8 @@ class AppTheme {
   AppTheme(this.name, this.data);
 }
 
-AppTheme darkTheme = AppTheme('Dark', ThemeData.dark());
 AppTheme lightTheme = AppTheme('Light', ThemeData.light());
+AppTheme darkTheme = AppTheme('Dark', ThemeData.dark());
 AppTheme customTheme = AppTheme('Custom', _buildCustomTheme());
 //设置默认的主题
 ThemeData _buildCustomTheme() {
