@@ -3,7 +3,7 @@
  * @Autor: ilmari
  * @Date: 2021-04-19 16:10:54
  * @LastEditors: ilmari
- * @LastEditTime: 2021-05-05 15:02:30
+ * @LastEditTime: 2021-05-08 16:16:16
  */
 import 'package:flutter/material.dart';
 import 'package:flutter_easyrefresh/easy_refresh.dart';
@@ -18,7 +18,7 @@ class HomePage extends GetView<HomeController> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('HomeView'),
+        title: Text('home'.tr),
         centerTitle: true,
       ),
       body: EasyRefresh(

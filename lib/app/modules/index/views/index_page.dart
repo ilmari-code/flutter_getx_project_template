@@ -3,7 +3,7 @@
  * @Autor: ilmari
  * @Date: 2021-04-27 15:03:30
  * @LastEditors: ilmari
- * @LastEditTime: 2021-05-08 11:05:25
+ * @LastEditTime: 2021-05-08 16:13:39
  */
 import 'package:flutter/material.dart';
 import 'package:flutter_getx_project_template/app/modules/index/controllers/index_controller.dart';
@@ -24,7 +24,29 @@ class IndexPage extends GetView<IndexController> {
                       Border(top: BorderSide(width: 0.5, color: Colors.grey))),
               child: Obx(() => BottomNavigationBar(
                     backgroundColor: Colors.white,
-                    items: controller.items,
+                    items: [
+                      BottomNavigationBarItem(
+                          label: 'home'.tr,
+                          icon: Icon(Icons.home),
+                          activeIcon: Icon(
+                            Icons.home,
+                            color: ResourceColors.color_08B16B,
+                          )),
+                      BottomNavigationBarItem(
+                          label: 'features'.tr,
+                          icon: Icon(Icons.featured_video),
+                          activeIcon: Icon(
+                            Icons.featured_video,
+                            color: ResourceColors.color_08B16B,
+                          )),
+                      BottomNavigationBarItem(
+                          label: 'mine'.tr,
+                          icon: Icon(Icons.meeting_room),
+                          activeIcon: Icon(
+                            Icons.meeting_room,
+                            color: ResourceColors.color_08B16B,
+                          )),
+                    ],
                     type: BottomNavigationBarType.shifting,
                     currentIndex: controller.tabIndex.value,
                     elevation: 0,

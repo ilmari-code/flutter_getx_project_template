@@ -3,7 +3,7 @@
  * @Autor: ilmari
  * @Date: 2021-04-20 09:21:53
  * @LastEditors: ilmari
- * @LastEditTime: 2021-04-27 15:40:50
+ * @LastEditTime: 2021-05-08 16:34:08
  */
 import 'package:flutter/material.dart';
 
@@ -20,11 +20,10 @@ class FeaturesPage extends GetView<FeaturesController> {
         centerTitle: true,
       ),
       body: Center(
-        child: Text(
-          'FeaturesView is working',
-          style: TextStyle(fontSize: 20),
-        ),
-      ),
+          child: Text(
+        'FeaturesView is working',
+        style: TextStyle(fontSize: 20),
+      )),
     );
   }
 }

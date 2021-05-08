@@ -3,7 +3,7 @@
  * @Autor: ilmari
  * @Date: 2021-04-27 14:58:51
  * @LastEditors: ilmari
- * @LastEditTime: 2021-05-08 11:05:34
+ * @LastEditTime: 2021-05-08 16:35:00
  */
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
@@ -38,29 +38,12 @@ class IndexController extends GetxController {
           return MinePage();
         })),
   ];
-  final List<BottomNavigationBarItem> items = [
-    BottomNavigationBarItem(
-        label: '首页',
-        icon: Icon(Icons.home),
-        activeIcon: Icon(
-          Icons.home,
-          color: ResourceColors.color_08B16B,
-        )),
-    BottomNavigationBarItem(
-        label: '功能',
-        icon: Icon(Icons.featured_video),
-        activeIcon: Icon(
-          Icons.featured_video,
-          color: ResourceColors.color_08B16B,
-        )),
-    BottomNavigationBarItem(
-        label: '我的',
-        icon: Icon(Icons.meeting_room),
-        activeIcon: Icon(
-          Icons.meeting_room,
-          color: ResourceColors.color_08B16B,
-        )),
-  ];
+  @override
+  void onReady() {
+    print("onReady");
+    super.onReady();
+  }
+
   @override
   void onInit() {
     pageController = PageController(initialPage: tabIndex.value);
