@@ -1,5 +1,3 @@
-import 'dart:html';
-
 import 'package:flustars/flustars.dart';
 
 class DimenFont {

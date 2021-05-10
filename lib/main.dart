@@ -3,7 +3,7 @@
  * @Autor: ilmari
  * @Date: 2021-04-19 16:10:54
  * @LastEditors: ilmari
- * @LastEditTime: 2021-05-08 14:09:25
+ * @LastEditTime: 2021-05-10 17:31:58
  */
 import 'package:flustars/flustars.dart';
 import 'package:flutter/material.dart';
@@ -17,15 +17,24 @@ import 'package:flutter_getx_project_template/app/routes/app_routes.dart';
 import 'package:flutter_getx_project_template/app/utils/log/log.dart';
 import 'package:flutter_getx_project_template/app/utils/sp_utils/sp_utils.dart';
 import 'package:get/get.dart';
+import 'package:statsfl/statsfl.dart';
 
 import 'app/utils/network/http_utils.dart';
 
 void main() async {
   //sp init
   await SpUtils.init();
-  runApp(
-    MyApp(),
-  );
+  runApp(StatsFl(
+    isEnabled: true, //Toggle on/off
+    width: 80, //Set size
+    height: 30, //
+    maxFps: 90, // Support custom FPS target (default is 60)
+    // showText: true, // Hide text label
+    sampleTime: .5, //Interval between fps calculations, in seconds.
+    totalTime: 15, //Total length of timeline, in seconds.
+    align: Alignment.centerRight,
+    child: MyApp(),
+  ));
 }
 
 // ignore: must_be_immutable

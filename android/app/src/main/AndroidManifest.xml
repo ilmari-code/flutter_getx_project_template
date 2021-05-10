@@ -2,7 +2,7 @@
     package="com.jia.example.flutter_getx_project_template">
    <application
         android:label="flutter_getx_project_template"
-        android:icon="@mipmap/ic_launcher">
+        android:icon="@mipmap/launcher_icon">
         <activity
             android:name=".MainActivity"
             android:launchMode="singleTop"
