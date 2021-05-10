@@ -1,3 +1,5 @@
+import 'dart:html';
+
 import 'package:flustars/flustars.dart';
 
 class DimenFont {
@@ -17,7 +19,6 @@ class DimenFont {
 }
 
 class Dimens {
-
   static double zero = 0;
   static double size1 = getSize(1);
   static double size2 = getSize(2);
@@ -384,6 +385,7 @@ class Dimens {
   static double getSize(double size, {bool isFit = true}) {
     return (isFit ? ScreenUtil.getInstance().getAdapterSize(size) : size);
   }
+
   static double getSizeByHeight(double size, {bool isFit = true}) {
     return (isFit ? ScreenUtil.getInstance().getHeight(size) : size);
   }

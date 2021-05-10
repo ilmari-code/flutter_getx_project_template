@@ -3,10 +3,11 @@
  * @Autor: ilmari
  * @Date: 2021-05-08 11:15:42
  * @LastEditors: ilmari
- * @LastEditTime: 2021-05-08 16:00:30
+ * @LastEditTime: 2021-05-10 08:55:54
  */
 import 'package:flutter/material.dart';
 import 'package:flutter_getx_project_template/app/modules/mine/controllers/change_language_controller.dart';
+import 'package:flutter_getx_project_template/app/utils/extensions/extension_dimens.dart';
 import 'package:flutter_getx_project_template/app/resource/dimens.dart';
 import 'package:flutter_getx_project_template/app/resource/resource_colors.dart';
 import 'package:get/get.dart';
@@ -38,7 +39,7 @@ class ChangeLanguagePage extends GetView<ChangeLanguageController> {
               },
               child: Container(
                 margin: EdgeInsets.fromLTRB(
-                    Dimens.size10, Dimens.size10, Dimens.size10, 0),
+                    10.0.dimension(), Dimens.size10, Dimens.size10, 0),
                 child: Obx(() => Container(
                       decoration: BoxDecoration(
                         border: controller.selectedIndex.value == index
