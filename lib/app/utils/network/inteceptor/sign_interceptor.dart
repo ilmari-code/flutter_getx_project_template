@@ -6,8 +6,8 @@ import 'package:dio/dio.dart';
 import 'package:crypto/crypto.dart';
 
 class SignInterceptor extends Interceptor {
-  static String APPID = "app-mobile-mamobility";
-  static String AppSecret = "afea16bd1f5c4c349fdca150e5f940b0";
+  static String APPID = "app-mobile";
+  static String AppSecret = "afea16bd1f";
 
   Future onRequest(
       RequestOptions options, RequestInterceptorHandler handler) async {

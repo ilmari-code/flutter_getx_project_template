@@ -3,7 +3,7 @@
  * @Autor: ilmari
  * @Date: 2021-05-12 15:49:52
  * @LastEditors: ilmari
- * @LastEditTime: 2021-05-12 16:57:32
+ * @LastEditTime: 2021-05-13 14:08:59
  */
 import 'package:flustars/flustars.dart';
 import 'package:flutter/material.dart';
@@ -34,7 +34,7 @@ Future<void> initApp(Environment environ) async {
 }
 
 class MyApp extends StatelessWidget {
-  late final AppOptions? options;
+  AppOptions? options;
   final Environment? environment;
   MyApp({
     Key? key,

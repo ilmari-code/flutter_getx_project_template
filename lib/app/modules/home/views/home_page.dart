@@ -3,12 +3,11 @@
  * @Autor: ilmari
  * @Date: 2021-04-19 16:10:54
  * @LastEditors: ilmari
- * @LastEditTime: 2021-05-12 16:08:57
+ * @LastEditTime: 2021-05-13 14:11:53
  */
 import 'package:flutter/material.dart';
 import 'package:flutter_easyrefresh/easy_refresh.dart';
 import 'package:flutter_getx_project_template/app/config/constants.dart';
-import 'package:flutter_getx_project_template/app/plugins/options/options.dart';
 import 'package:flutter_getx_project_template/app/utils/toast/toast.dart';
 import 'package:flutter_getx_project_template/app/widget/state/empty_widget.dart';
 import 'package:get/get.dart';
@@ -52,7 +51,7 @@ class HomePage extends GetView<HomeController> {
                     onError: (error) => EmptyWidget(),
                   ),
                 ),
-                Text('${environment}')
+                Text('$environment')
               ],
             ),
           ),

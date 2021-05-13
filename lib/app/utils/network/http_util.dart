@@ -1,6 +1,4 @@
 import 'dart:convert';
-
-import 'package:flutter_getx_project_template/app/modules/home/models/user_info_entity.dart';
 import 'package:flutter_getx_project_template/app/utils/log/log.dart';
 import 'package:flutter_getx_project_template/app/utils/network/async_task.dart';
 import 'package:flutter_getx_project_template/app/utils/network/dio/callback.dart';
