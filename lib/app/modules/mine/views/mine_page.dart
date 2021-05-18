@@ -3,7 +3,7 @@
  * @Autor: ilmari
  * @Date: 2021-04-27 15:55:46
  * @LastEditors: ilmari
- * @LastEditTime: 2021-05-08 15:54:10
+ * @LastEditTime: 2021-05-18 10:20:06
  */
 import 'package:flutter/material.dart';
 import 'package:flutter_getx_project_template/app/resource/dimens.dart';
@@ -44,7 +44,16 @@ class MinePage extends GetView<MineController> {
       child: ListTile(
         title: Text("$title"),
         onTap: () {
-          NavigatorUtils.push(MineRoute.SettingPageRoute);
+          switch (index) {
+            case 0:
+              NavigatorUtils.push(MineRoute.SettingPageRoute);
+              break;
+            case 1:
+              controller.logOut();
+              break;
+            default:
+              break;
+          }
         },
       ),
     );

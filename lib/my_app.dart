@@ -3,11 +3,12 @@
  * @Autor: ilmari
  * @Date: 2021-05-12 15:49:52
  * @LastEditors: ilmari
- * @LastEditTime: 2021-05-13 14:08:59
+ * @LastEditTime: 2021-05-18 09:39:49
  */
 import 'package:flustars/flustars.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_getx_project_template/app/routes/login_route.dart';
 import 'package:get/get.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
 
@@ -49,7 +50,9 @@ class MyApp extends StatelessWidget {
       title: "GetXProject",
       debugShowCheckedModeBanner: false,
       enableLog: true,
-      initialRoute: AppRoutes.main,
+      initialRoute: SpUtils.get<bool>('isLogin', initValue: false)
+          ? AppRoutes.main
+          : LoginRoute.login,
       getPages: AppRoutes.allPages,
       unknownRoute: AppRoutes.getNotFoundPage(),
       // logWriterCallback: LoggerConfig.write,

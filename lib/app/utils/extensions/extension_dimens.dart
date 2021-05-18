@@ -3,9 +3,8 @@
  * @Autor: ilmari
  * @Date: 2021-05-10 08:49:59
  * @LastEditors: ilmari
- * @LastEditTime: 2021-05-10 09:29:51
+ * @LastEditTime: 2021-05-18 10:01:12
  */
-
 import 'package:flustars/flustars.dart';
 
 extension DimensDoubleExt on double {
