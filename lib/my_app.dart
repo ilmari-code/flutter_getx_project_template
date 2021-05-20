@@ -3,7 +3,7 @@
  * @Autor: ilmari
  * @Date: 2021-05-12 15:49:52
  * @LastEditors: ilmari
- * @LastEditTime: 2021-05-18 09:39:49
+ * @LastEditTime: 2021-05-20 17:57:39
  */
 import 'package:flustars/flustars.dart';
 import 'package:flutter/material.dart';
@@ -59,9 +59,18 @@ class MyApp extends StatelessWidget {
       locale: TranslationService.locale,
       fallbackLocale: TranslationService.fallbackLocale,
       translations: TranslationService(),
-      builder: (context, child) => Directionality(
-          textDirection: AppOptions().textDirection,
-          child: _applyTextScaleFactor(child ?? Container())),
+      builder: (context, child) => GestureDetector(
+        onTap: () {
+          FocusScopeNode currentFocus = FocusScope.of(context);
+          if (!currentFocus.hasPrimaryFocus &&
+              currentFocus.focusedChild != null) {
+            FocusManager.instance.primaryFocus?.unfocus();
+          }
+        },
+        child: Directionality(
+            textDirection: AppOptions().textDirection,
+            child: _applyTextScaleFactor(child ?? Container())),
+      ),
       routingCallback: (value) {
         Log.info(value?.current);
       },
