@@ -3,15 +3,13 @@
  * @Autor: ilmari
  * @Date: 2021-04-27 15:55:46
  * @LastEditors: ilmari
- * @LastEditTime: 2021-05-18 10:20:06
+ * @LastEditTime: 2021-05-21 11:47:02
  */
 import 'package:flutter/material.dart';
 import 'package:flutter_getx_project_template/app/resource/dimens.dart';
 import 'package:flutter_getx_project_template/app/resource/resource_colors.dart';
 import 'package:flutter_getx_project_template/app/routes/mine_route.dart';
 import 'package:flutter_getx_project_template/app/routes/utils/get_navigator.dart';
-import 'package:flutter_getx_project_template/app/utils/toast/toast.dart';
-
 import 'package:get/get.dart';
 
 import '../controllers/mine_controller.dart';
