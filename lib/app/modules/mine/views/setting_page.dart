@@ -3,7 +3,7 @@
  * @Autor: ilmari
  * @Date: 2021-05-08 15:50:05
  * @LastEditors: ilmari
- * @LastEditTime: 2021-05-08 15:53:32
+ * @LastEditTime: 2021-05-28 15:12:46
  */
 import 'package:flutter/material.dart';
 import 'package:flutter_getx_project_template/app/modules/mine/controllers/setting_controller.dart';

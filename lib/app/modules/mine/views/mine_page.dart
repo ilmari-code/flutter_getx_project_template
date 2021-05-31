@@ -3,7 +3,7 @@
  * @Autor: ilmari
  * @Date: 2021-04-27 15:55:46
  * @LastEditors: ilmari
- * @LastEditTime: 2021-05-21 11:47:02
+ * @LastEditTime: 2021-05-28 14:58:45
  */
 import 'package:flutter/material.dart';
 import 'package:flutter_getx_project_template/app/resource/dimens.dart';
@@ -14,22 +14,42 @@ import 'package:get/get.dart';
 
 import '../controllers/mine_controller.dart';
 
+class Person {
+  String name = '';
+  Person(
+    this.name,
+  );
+}
+
 class MinePage extends GetView<MineController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          title: Text('MineView'),
-          centerTitle: true,
-        ),
-        body: ListView.separated(
-            itemBuilder: (BuildContext context, int index) {
+      body: CustomScrollView(
+        slivers: <Widget>[
+          SliverAppBar(
+            floating: true,
+            expandedHeight: Dimens.size200,
+            stretch: true,
+            pinned: true,
+            flexibleSpace: FlexibleSpaceBar(
+              background: FlutterLogo(),
+              title: Text("MinePage"),
+              stretchModes: [
+                StretchMode.blurBackground,
+                StretchMode.zoomBackground,
+                StretchMode.fadeTitle
+              ],
+            ),
+          ),
+          SliverList(
+            delegate: SliverChildBuilderDelegate((context, index) {
               return buildRow(index, controller.titleList[index]);
-            },
-            separatorBuilder: (BuildContext context, int index) {
-              return SizedBox(height: Dimens.zero);
-            },
-            itemCount: controller.titleList.length));
+            }, childCount: controller.titleList.length),
+          ),
+        ],
+      ),
+    );
   }
 
   Container buildRow(int index, String title) {
