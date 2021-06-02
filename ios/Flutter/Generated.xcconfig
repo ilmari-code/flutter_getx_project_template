@@ -2,7 +2,7 @@
 FLUTTER_ROOT=/Applications/flutter
 FLUTTER_APPLICATION_PATH=/Users/zangyingzhen/Documents/other/flutter_getx_project_template
 COCOAPODS_PARALLEL_CODE_SIGN=true
-FLUTTER_TARGET=/Users/zangyingzhen/Documents/other/flutter_getx_project_template/lib/main_test.dart
+FLUTTER_TARGET=/Users/zangyingzhen/Documents/other/flutter_getx_project_template/lib/main_dev.dart
 FLUTTER_BUILD_DIR=build
 SYMROOT=${SOURCE_ROOT}/../build/ios
 FLUTTER_BUILD_NAME=1.0.0

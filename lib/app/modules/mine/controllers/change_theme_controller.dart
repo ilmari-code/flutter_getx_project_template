@@ -5,6 +5,7 @@
  * @LastEditors: ilmari
  * @LastEditTime: 2021-05-08 14:04:55
  */
+import 'package:flutter/material.dart';
 import 'package:flutter_getx_project_template/app/plugins/options/themes.dart';
 import 'package:flutter_getx_project_template/app/utils/sp_utils/sp_utils.dart';
 import 'package:get/get.dart';

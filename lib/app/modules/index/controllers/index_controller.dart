@@ -3,7 +3,7 @@
  * @Autor: ilmari
  * @Date: 2021-04-27 14:58:51
  * @LastEditors: ilmari
- * @LastEditTime: 2021-05-08 16:35:00
+ * @LastEditTime: 2021-06-02 17:29:12
  */
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
@@ -13,7 +13,6 @@ import 'package:flutter_getx_project_template/app/modules/home/controllers/home_
 import 'package:flutter_getx_project_template/app/modules/home/views/home_page.dart';
 import 'package:flutter_getx_project_template/app/modules/mine/controllers/mine_controller.dart';
 import 'package:flutter_getx_project_template/app/modules/mine/views/mine_page.dart';
-import 'package:flutter_getx_project_template/app/resource/resource_colors.dart';
 import 'package:flutter_getx_project_template/app/utils/keep_alive_page.dart';
 import 'package:get/get.dart';
 
