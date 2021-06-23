@@ -3,9 +3,10 @@
  * @Autor: ilmari
  * @Date: 2021-04-27 15:55:46
  * @LastEditors: ilmari
- * @LastEditTime: 2021-05-28 14:58:45
+ * @LastEditTime: 2021-06-11 09:06:06
  */
 import 'package:flutter/material.dart';
+import 'package:flutter_getx_project_template/app/modules/home/service/service.dart';
 import 'package:flutter_getx_project_template/app/resource/dimens.dart';
 import 'package:flutter_getx_project_template/app/resource/resource_colors.dart';
 import 'package:flutter_getx_project_template/app/routes/mine_route.dart';

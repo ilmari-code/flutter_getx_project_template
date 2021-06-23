@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -32,8 +35,11 @@
   <component name="ChangeListManager">
     <list default="true" id="6800943f-6da0-4420-8f96-b16955925741" name="Default Changelist" comment="IDEA 添加Model生成工具 FlutterJsonBean">
       <change beforePath="$PROJECT_DIR$/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins-dependencies" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Pods/Pods.xcodeproj/xcuserdata/zangyingzhen.xcuserdatad/xcschemes/Pods-Runner.xcscheme" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Pods.xcodeproj/xcuserdata/zangyingzhen.xcuserdatad/xcschemes/Pods-Runner.xcscheme" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/app/utils/network/network.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/app/utils/network/network.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flutter_getx_project_template.iml" beforeDir="false" afterPath="$PROJECT_DIR$/flutter_getx_project_template.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/app/modules/home/controllers/home_controller.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/app/modules/home/controllers/home_controller.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/app/modules/home/service/service.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/app/modules/home/service/service.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/app/modules/mine/views/mine_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/app/modules/mine/views/mine_page.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +72,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
-  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -103,5 +109,23 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="IDEA 添加Model生成工具 FlutterJsonBean" />
     <option name="LAST_COMMIT_MESSAGE" value="IDEA 添加Model生成工具 FlutterJsonBean" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1398" height="223" key="GridCell.Tab.0.bottom" timestamp="1623318068392">
+      <screen x="-1866" y="-155" width="1866" height="1055" />
+    </state>
+    <state width="1398" height="223" key="GridCell.Tab.0.bottom/0.25.1440.875/-1866.-155.1866.1055@-1866.-155.1866.1055" timestamp="1623318068392" />
+    <state width="1398" height="223" key="GridCell.Tab.0.center" timestamp="1623318068390">
+      <screen x="-1866" y="-155" width="1866" height="1055" />
+    </state>
+    <state width="1398" height="223" key="GridCell.Tab.0.center/0.25.1440.875/-1866.-155.1866.1055@-1866.-155.1866.1055" timestamp="1623318068390" />
+    <state width="1398" height="223" key="GridCell.Tab.0.left" timestamp="1623318068388">
+      <screen x="-1866" y="-155" width="1866" height="1055" />
+    </state>
+    <state width="1398" height="223" key="GridCell.Tab.0.left/0.25.1440.875/-1866.-155.1866.1055@-1866.-155.1866.1055" timestamp="1623318068388" />
+    <state width="1398" height="223" key="GridCell.Tab.0.right" timestamp="1623318068391">
+      <screen x="-1866" y="-155" width="1866" height="1055" />
+    </state>
+    <state width="1398" height="223" key="GridCell.Tab.0.right/0.25.1440.875/-1866.-155.1866.1055@-1866.-155.1866.1055" timestamp="1623318068391" />
   </component>
 </project>
