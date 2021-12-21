@@ -1,15 +1,14 @@
 // This is a generated file; do not edit or check into version control.
-FLUTTER_ROOT=/Applications/flutter
-FLUTTER_APPLICATION_PATH=/Users/zangyingzhen/Documents/other/flutter_getx_project_template
+FLUTTER_ROOT=/Users/ilmari/development/flutter
+FLUTTER_APPLICATION_PATH=/Users/ilmari/Documents/PersonalWorkspace/flutter_getx_project_template
 COCOAPODS_PARALLEL_CODE_SIGN=true
-FLUTTER_TARGET=/Users/zangyingzhen/Documents/other/flutter_getx_project_template/lib/main_dev.dart
+FLUTTER_TARGET=/Users/ilmari/Documents/PersonalWorkspace/flutter_getx_project_template/lib/main_dev.dart
 FLUTTER_BUILD_DIR=build
-SYMROOT=${SOURCE_ROOT}/../build/ios
 FLUTTER_BUILD_NAME=1.0.0
 FLUTTER_BUILD_NUMBER=1
-EXCLUDED_ARCHS[sdk=iphonesimulator*]=arm64 i386
+EXCLUDED_ARCHS[sdk=iphonesimulator*]=i386 arm64
 DART_DEFINES=Zmx1dHRlci5pbnNwZWN0b3Iuc3RydWN0dXJlZEVycm9ycz10cnVl,RkxVVFRFUl9XRUJfQVVUT19ERVRFQ1Q9dHJ1ZQ==
 DART_OBFUSCATION=false
 TRACK_WIDGET_CREATION=true
 TREE_SHAKE_ICONS=false
-PACKAGE_CONFIG=/Users/zangyingzhen/Documents/other/flutter_getx_project_template/.dart_tool/package_config.json
+PACKAGE_CONFIG=/Users/ilmari/Documents/PersonalWorkspace/flutter_getx_project_template/.dart_tool/package_config.json
