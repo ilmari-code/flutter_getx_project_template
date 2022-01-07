@@ -132,6 +132,8 @@ abstract class NetWorkHttpUtils {
       } catch (e, s) {
         Log.warning(e.toString(), e, s, false);
       }
+    } else {
+      data = jsonParseData("responseData");
     }
     return data;
   }
